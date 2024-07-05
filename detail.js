@@ -12,8 +12,8 @@ async function main() {
     const typeDiv = document.getElementById("type")
     const genderDiv = document.getElementById("gender")
     const originDiv = document.getElementById("origin")
-    nameDiv.innerHTML =`name: ${data.name}`
-    statusDiv.innerHTML = `status: ${data.status}`
+    nameDiv.innerHTML =`${data.name}`
+    statusDiv.innerHTML = `Status: ${data.status}`
     typeDiv.innerHTML = `Type: ${data.type}`
     genderDiv.innerHTML = `Gender: ${data.gender}`
     originDiv.innerHTML = `Origin: ${data.origin.name}`
