@@ -4,8 +4,7 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
-  background-image: linear-gradient(to bottom, #f0f0f0, #d8d8d8);
+  background-image: url(assets/Background.jpg);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;

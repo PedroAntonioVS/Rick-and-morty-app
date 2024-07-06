@@ -1,11 +1,12 @@
 body {
+  background-image: url(assets/garagem.png);
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
 }
 
 .card {
