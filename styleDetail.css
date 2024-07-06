@@ -1,6 +1,6 @@
 body {
   background-image: url(assets/garagem.png);
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,55 +11,77 @@ body {
 
 .card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background-color: #fff;
   border: 3px solid #00b2ca;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 80%;
-  max-width: 900px;
-  height: 300px;
+  max-width: 500px;
   padding: 0;
-  box-shadow: 0 4px 8px #00b2ca; 
-
+  margin: 20px;
 }
 
 img {
-  width: 40%;
+  width: 100%;
   height: auto;
-  border-right: 3px solid #00b2ca;
-  margin-right: 20px;
+  border-bottom: 3px solid #00b2ca;
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 20px;
-  width: 60%;
 }
 
 #name {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
 }
 
 #status {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #00b2ca;
   text-align: left;
+  margin-top: 0;
 }
 
-#type, #species, #gender, #origin {
-  font-size: 20px;
+#type,
+#species,
+#gender,
+#origin {
+  font-size: 16px;
   color: #555;
   margin: 5px 0;
   text-align: left;
 }
-.card:hover {
-    transform: scale(1.03);
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
   }
+
+  img {
+    border-bottom: none;
+  }
+
+  #name {
+    font-size: 20px;
+  }
+
+  #status {
+    font-size: 16px;
+  }
+
+  #type,
+  #species,
+  #gender,
+  #origin {
+    font-size: 14px;
+  }
+}
+.card:hover {
+  transform: scale(1.03);
+}
