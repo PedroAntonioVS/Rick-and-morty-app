@@ -63,16 +63,17 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  width: 500px;
-}
+
 .img-logo {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  max-width: 100%;
+  max-height: 500px;
+  margin: auto;
 }
 @media (max-width: 768px) {
   .character {
-    width: 90%; /* Tamanho ajustável para telas menores */
+    width: 90%; 
   }
 }
