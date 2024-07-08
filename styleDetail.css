@@ -24,7 +24,7 @@ body {
   margin: 20px;
 }
 
-img {
+.card img {
   width: 100%;
   height: auto;
   border-bottom: 3px solid #00b2ca;
@@ -139,4 +139,39 @@ img {
 
 .nav-links li a:hover {
   color: #005dc0; 
+}
+.footer {
+  background-color: #47474748;
+  color: #fefefe; /* Cor do texto */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Ocupa toda a largura */
+  max-width: 30%;
+  margin: 0 auto;
+  border-radius: 20px;
+
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-content img{
+  width: 20px;
+  margin-left: 5px;
 }
