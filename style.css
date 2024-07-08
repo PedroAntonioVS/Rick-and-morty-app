@@ -5,7 +5,7 @@ body{
   font-family: Poppins, sans-serif;
   /*background-image: url(assets/Background.jpg);*/
   background-size: cover;
-  background-color: #000f3f;
+  background-color: #001353;
   height: 100vh;
 }
 
@@ -26,9 +26,9 @@ h1 {
   margin: 10px;
   padding: 10px;
   text-align: center;
-  background-color: #ffffff13;
+  background-color: #fffdfd1f;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease-in-out;
 }
 
