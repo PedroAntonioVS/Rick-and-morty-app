@@ -4,7 +4,7 @@ body {
   background-image: url(assets/garagem.png);
   background-size: cover;
   height: 100%;
-  margin: 40px;
+  margin: 0px;
   padding: 0;
 }
 
@@ -57,38 +57,7 @@ body {
   text-align: left;
 }
 
-@media (max-width: 768px) {
-  .card {
-    width: 70vh;
-  }
-  .nav-links {
-    margin-top: 10px; 
-  }
-  .nav-links li {
-    text-align: center;
-    
-  }
 
-  img {
-    border-bottom: none;
-  }
-
-  #name {
-    font-size: 20px;
-  }
-
-  #status {
-    font-size: 16px;
-  }
-
-  #type,
-  #species,
-  #gender,
-  #origin {
-    font-size: 14px;
-  }
-  
-}
 .card:hover {
   transform: scale(1.03);
 }
@@ -99,6 +68,8 @@ body {
   border-bottom-left-radius: 16px;
   justify-content:center;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   position:static;
   top: 0%;
@@ -131,7 +102,7 @@ body {
 }
 .footer {
   background-color: #47474748;
-  color: #fefefe; /* Cor do texto */
+  color: #fefefe; 
   text-align: center;
   padding: 10px;
   position: static;
@@ -139,7 +110,7 @@ body {
   margin:auto;
   border-radius: 20px;
   display: block;
-margin-top: 100px;
+  margin-top: 100px;
 }
 
 .footer-content {
@@ -160,4 +131,37 @@ margin-top: 100px;
 .footer-content img{
   width: 20px;
   margin-left: 5px;
+
+  
+}@media (max-width: 768px) {
+  .card {
+    width: 70vh;
+  }
+  .nav-links {
+    margin-top: 10px; 
+  }
+  .nav-links li {
+    text-align: center;
+    
+  }
+
+  img {
+    border-bottom: none;
+  }
+
+  #name {
+    font-size: 20px;
+  }
+
+  #status {
+    font-size: 16px;
+  }
+
+  #type,
+  #species,
+  #gender,
+  #origin {
+    font-size: 14px;
+  }
+  
 }
