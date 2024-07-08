@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="main()"> 
-        <img class="img-logo" src="assets/Rick-And-Morty-logo.png" alt="">
-    <div id="characters"></div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/Rick-Sanchez.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://rickandmortyapi.com/" target="_blank">About</a></li>
+        </ul>
+    </nav>
+
+    <img class="img-logo" src="assets/Rick-And-Morty-logo.png" alt="">
+    <div class="filters">
+        <select name="status" id="status-filter" class="select-filter">
+            <option value="">Status</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <select name="gender" id="gender-filter" class="select-filter">
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <select name="species" id="species-filter" class="select-filter">
+            <option value="">Species</option>
+            <option value="animal">Animal</option>
+            <option value="alien">Alien</option>
+            <option value="disease">Doença</option>
+            <option value="unknown">Desconhecido</option>
+            <option value="human">Humano</option>
+            <option value="humanoid">Humanoide</option>
+            <option value="mythological">Mitologico</option>
+            <option value="poopybutthole">Poopybutthole</option>
+            <option value="robot">Robo</option>
+        </select>
+        <div class="apply-filters">
+            <button id="apply-button" onclick="applyFilters()">Aplicar filtros</button>
+        </div>
+    </div>
+    <div id="characters">
+        <!-- Serão adicionados cards no JS a partir das requisições -->
+    </div>
+    <div class="loadMore-container">
+        <button id="loadMore" onclick="loadMore()">Carregar mais</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
